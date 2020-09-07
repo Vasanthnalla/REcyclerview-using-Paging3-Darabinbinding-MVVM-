@@ -35,10 +35,6 @@ class MoviesActivity : AppCompatActivity() {
         binding.list.addItemDecoration(decoration)
 
             initAdapter()
-
-
-
-
     }
 
     private fun initAdapter() {
