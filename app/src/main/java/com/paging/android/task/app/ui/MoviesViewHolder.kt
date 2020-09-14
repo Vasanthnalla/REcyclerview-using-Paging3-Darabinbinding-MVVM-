@@ -24,11 +24,11 @@ class MoviesViewHolder constructor(private val dataBinding: ViewDataBinding) : R
     private fun showRepoData(movie: Movie) {
         dataBinding.setVariable(BR.item, movie)
         dataBinding.executePendingBindings()
-        var date = movie.releaseDate
+        var date = movie.release_date
         if (date != null) {
             date = date.substring(0,4)
             releaseDate.setText(date)
         }
-        Picasso.get().load("http://image.tmdb.org/t/p/w342/"+movie.posterPath).placeholder(R.drawable.loader).into(avatarImage);
+        Picasso.get().load("http://image.tmdb.org/t/p/w342/"+movie.poster_path).placeholder(R.drawable.loader).into(avatarImage);
     }
 }

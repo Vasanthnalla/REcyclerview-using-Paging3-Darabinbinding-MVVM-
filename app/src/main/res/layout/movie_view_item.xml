@@ -52,7 +52,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:padding="4dp"
-                    android:text="@{item.originalLanguage}"
+                    android:text="@{item.original_language}"
                     android:textSize="13sp"
                     bind:layout_constraintEnd_toEndOf="parent"
                     bind:layout_constraintTop_toTopOf="parent"

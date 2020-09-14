@@ -17,8 +17,6 @@ class MovieRepository(private val service: GithubService): PagingSource<Int, Mov
 
     private val inMemoryCache = mutableListOf<Movie>()
 
-    private val searchResults = ConflatedBroadcastChannel<RepoSearchResult>()
-
     private var lastRequestedPage = GITHUB_STARTING_PAGE_INDEX
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Movie> {
